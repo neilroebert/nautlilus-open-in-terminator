@@ -11,7 +11,7 @@ I use GNOME as my linux distro flavour, but I don't really like the default _gno
 This assumes you already have terminator installed on your system. The only dependancy that you would need is the Nautilus Python module. This can be installed by using the followng command:
 
 ```sh
-sudo apt-get install python-nautilus 
+sudo apt install python3-nautilus 
 ```
 Next you would need to create a directory for the plugin. This can be be done by running the following command:
 
