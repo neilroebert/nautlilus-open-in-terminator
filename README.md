@@ -26,7 +26,7 @@ git clone https://github.com/neilroebert/nautlilus-open-in-terminator.git
 ```
 Move the files to the correct directory.
 ```sh
-cd open-in-terminator
+cd nautlilus-open-in-terminator
 cp nautilus-terminator.p* ~/.local/share/nautilus-python/extensions/
 ```
 
