@@ -14,7 +14,7 @@ class OpenTerminator(GObject.GObject, Nautilus.MenuProvider):
         """Called when the user selects the menu."""
         try:
             path = file.get_location().get_path()
-            os.system("terminator --working-directory={0}".format(path))
+            os.system("terminator --working-directory='{0}'".format(path))
         except AttributeError: # it is a list of elements
             dir_list = [f.get_location().get_path() for f in file if f.is_directory()]
             os.system("terminator --command='echo -e \"Something went wrong. Send an issue on git with what you attempted\nPath = {0}\" && bash || bash'".format(dir_list[0]))
